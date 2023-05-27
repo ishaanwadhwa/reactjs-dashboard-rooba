@@ -1,0 +1,191 @@
+[
+    {
+      "text": "30 days",
+      "data": {
+        "total_visits": {
+          "label": [
+            "Feb",
+            "March",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul"
+          ],
+          "data": [
+            24000000,
+            21000000,
+            32000000,
+            28000000,
+            24000033,
+            35000000
+          ]
+        },
+        "bounceRate": {
+          "title": "Bounce Rate",
+          "changeRate": 12,
+          "value": 42.34,
+          "selected": true
+        },
+        "pagesPerVisit": {
+          "title": "Pages per view",
+          "selected": false,
+          "value": 42.34,
+          "changeRate": 12
+        },
+        "totalMonthlyVisit": {
+          "selected": false,
+          "value": 326.6,
+          "title": "Total Monthly Visit",
+          "changeRate": -2.1
+        },
+        "averageVisit": {
+          "selected": false,
+          "title": "Average Visit Duration",
+          "value": "00:03:27",
+          "changeRate": -2.4
+        }
+      },
+      "selected": true
+    },
+    {
+      "text": "60 days",
+      "data": {
+        "total_visits": {
+          "label": [
+            "Feb",
+            "March",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul"
+          ],
+          "data": [
+            10,
+            12,
+            16,
+            25,
+            24000033,
+            35000000
+          ]
+        },
+        "bounceRate": {
+          "title": "Bounce Rate",
+          "changeRate": 15,
+          "value": 42.34,
+          "selected": true
+        },
+        "pagesPerVisit": {
+          "title": "Pages per view",
+          "selected": false,
+          "value": 42.34,
+          "changeRate": 15
+        },
+        "totalMonthlyVisit": {
+          "selected": false,
+          "value": 326.6,
+          "title": "Total Monthly Visit",
+          "changeRate": -2.1
+        },
+        "averageVisit": {
+          "selected": false
+        }
+      },
+      "selected": false
+    },
+    {
+      "text": "6 months",
+      "data": {
+        "total_visits": {
+          "label": [
+            "Sept 2021",
+            "March 2022",
+            "Sept 2022",
+            "March 2023",
+            "Sept 2023",
+            "March 2024"
+          ],
+          "data": [
+            24000000,
+            21000000,
+            32000000,
+            28000000,
+            24000033,
+            35000000
+          ]
+        },
+        "bounceRate": {
+          "title": "Bounce Rate",
+          "changeRate": 12,
+          "value": 42.34,
+          "selected": true
+        },
+        "pagesPerVisit": {
+          "title": "Pages per view",
+          "selected": false,
+          "value": 42.34,
+          "changeRate": 12
+        },
+        "totalMonthlyVisit": {
+          "selected": false,
+          "value": 326.6,
+          "title": "Total Monthly Visit",
+          "changeRate": -2.1
+        },
+        "averageVisit": {
+          "selected": false,
+          "title": "Average Visit Duration",
+          "value": "00:03:27",
+          "changeRate": -2.4
+        }
+      },
+      "selected": false
+    },
+    {
+      "text": "12 months",
+      "data": {
+        "total_visits": {
+          "label": [
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "data": [
+            12000000,
+            33000000,
+            24000000,
+            28000000,
+            24000033,
+            35000000
+          ]
+        },
+        "bounceRate": {
+          "title": "Bounce Rate",
+          "changeRate": 1,
+          "value": 14,
+          "selected": true
+        },
+        "pagesPerVisit": {
+          "title": "Pages per view",
+          "selected": false,
+          "value": 15,
+          "changeRate": -2
+        },
+        "totalMonthlyVisit": {
+          "selected": false,
+          "value": 900,
+          "title": "Total Yearly Visit",
+          "changeRate": 2.1
+        },
+        "averageVisit": {
+          "selected": false,
+          "title": "Average Visit Duration",
+          "value": "00:5:27",
+          "changeRate": 4.4
+        }
+      },
+      "selected": false
+    }
+  ]
