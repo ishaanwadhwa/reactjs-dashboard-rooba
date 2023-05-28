@@ -264,22 +264,38 @@ function TrafficSourcesInfoBox() {
 <thead className="tableHead">
 <tr>
 <th>
-  <div style={{
-    background : "green",
-    height : "1rem",
-    width : "1rem"
-  }}></div>  source</th>
+  source</th>
 <th>Traffic Source (%)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Direct</td>
-<td>10</td>
+<td>
+    <div className="flex-table-cell">
+        
+<div style={{
+    background : "#E17CFD",
+    height : "0.5rem",
+    width : "1rem",
+    marginRight : '0.5rem'
+
+  }}></div> Direct
+        </div>
+</td>
+<td>50</td>
 </tr>
 <tr>
-<td>Search</td>
-<td>10</td>
+<td>
+    <div className="flex-table-cell">
+        
+<div style={{
+    background : "#4CD7F6",
+    height : "0.5rem",
+    width : "1rem",
+    marginRight : '0.5rem'
+  }}></div> Search
+        </div>
+</td><td>50</td>
 </tr>
 </tbody>
 </table>
