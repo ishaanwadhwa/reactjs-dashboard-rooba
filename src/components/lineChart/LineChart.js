@@ -13,6 +13,7 @@ export default function LineChart(data) {
                             cubicInterpolationMode: 'monotone',
                             borderColor :  '#7166F9',
                             label : '',    
+                            
                         }
                     ]
                 },
@@ -37,6 +38,12 @@ export default function LineChart(data) {
                         
     
                 },
+                plugins: {
+                    
+                    legend : {
+                        display : false
+                    }
+                  },
                     title : false,
                     pointBorderWidth : 0,
                     hoverBorderWidth : 3,

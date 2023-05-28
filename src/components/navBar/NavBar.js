@@ -69,7 +69,7 @@ const NavList = () => {
         {
             text : 'Logout',
             selected : false,
-            icon : 'fa-sharp fa-solid fa-file-export li-icon',
+            icons : 'fa-sharp fa-solid fa-file-export li-icon',
             iconSelected : 'fa-sharp fa-solid fa-file-export li-icon'
         }
     ]
@@ -85,13 +85,14 @@ const NavList = () => {
             }
             return li;
         })    
+        console.log(liCopy);
         setSelected(liCopy);    
     }
     return <ul>
         {
             selected.map((val,index) => { 
                 return <li className={val.selected ? 'list-item selected' : 'list-item'} onClick={() => selectItem(index)}> 
-                <i className={val.selected ? val.iconSelected : val.icons} style={{color: val.selected ?  '#7166F9' : 'black', fontSize : '32px'}}></i>
+                <i className={val.selected ? val.iconSelected : val.icons} style={{color: val.selected ?  '#7166F9' : val.text === 'Logout' ? '#928484': 'black', fontSize : '32px'}}></i>
                     {val.text}
                 </li>           })
         }

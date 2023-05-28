@@ -60,34 +60,37 @@
             "Jul"
           ],
           "data": [
-            10,
-            12,
-            16,
-            25,
-            24000033,
+            19000000,
+            22000000,
+            28000000,
+            31000000,
+            24000000,
             35000000
           ]
         },
         "bounceRate": {
           "title": "Bounce Rate",
-          "changeRate": 15,
-          "value": 42.34,
+          "changeRate": -5,
+          "value": 19.91,
           "selected": true
         },
         "pagesPerVisit": {
           "title": "Pages per view",
           "selected": false,
-          "value": 42.34,
-          "changeRate": 15
+          "value": 20,
+          "changeRate": -4
         },
         "totalMonthlyVisit": {
           "selected": false,
-          "value": 326.6,
+          "value": 270,
           "title": "Total Monthly Visit",
-          "changeRate": -2.1
+          "changeRate": -1.1
         },
         "averageVisit": {
-          "selected": false
+          "selected": false,
+          "value" : "00:04:11",
+          "title" : "Average Visit Duration",
+          "changeRate": 1
         }
       },
       "selected": false
@@ -115,27 +118,27 @@
         },
         "bounceRate": {
           "title": "Bounce Rate",
-          "changeRate": 12,
-          "value": 42.34,
+          "changeRate": 7,
+          "value": 33.80,
           "selected": true
         },
         "pagesPerVisit": {
           "title": "Pages per view",
           "selected": false,
-          "value": 42.34,
-          "changeRate": 12
+          "value": 35.65,
+          "changeRate": 7.2
         },
         "totalMonthlyVisit": {
           "selected": false,
-          "value": 326.6,
+          "value": 240,
           "title": "Total Monthly Visit",
-          "changeRate": -2.1
+          "changeRate": -4
         },
         "averageVisit": {
           "selected": false,
           "title": "Average Visit Duration",
-          "value": "00:03:27",
-          "changeRate": -2.4
+          "value": "00:02:01",
+          "changeRate": 1
         }
       },
       "selected": false
