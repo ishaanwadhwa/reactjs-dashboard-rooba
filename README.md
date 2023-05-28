@@ -1,3 +1,22 @@
+Rooba dashboard frontend-
+
+
+The following package dependencies exist in the project - 
+“chart.js” - Pre requisite for react-chartjs-2
+”react-chartjs-2” - used to import Chart components directly into react.
+“gh-pages” - used to ease deployement to gh pages by creating a build branch.
+“material-ui/core” - used to deploy tooltips.
+
+
+The design is not fully responsive yet and works best in for laptops/desktops.
+Icons have been fetched using fontawesome and bootstrap-icon stylesheets.
+
+Interactions added - 
+The navigation bar on the left is clickable but has no action bound to it.
+The range selector on the dashboard is clickable and changes the data displayed as per range.
+The info boxes on the right section of the dashboard are clickable and get highlighted when selected.
+? symbol provides tooltips when hovered over.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
