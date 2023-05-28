@@ -27,7 +27,7 @@
           "selected": true
         },
         "pagesPerVisit": {
-          "title": "Pages per view",
+          "title": "Pages per visit",
           "selected": false,
           "value": 42.34,
           "changeRate": 12
@@ -75,7 +75,7 @@
           "selected": true
         },
         "pagesPerVisit": {
-          "title": "Pages per view",
+          "title": "Pages per visit",
           "selected": false,
           "value": 20,
           "changeRate": -4
@@ -123,7 +123,7 @@
           "selected": true
         },
         "pagesPerVisit": {
-          "title": "Pages per view",
+          "title": "Pages per visit",
           "selected": false,
           "value": 35.65,
           "changeRate": 7.2
@@ -171,7 +171,7 @@
           "selected": true
         },
         "pagesPerVisit": {
-          "title": "Pages per view",
+          "title": "Pages per visit",
           "selected": false,
           "value": 15,
           "changeRate": -2

@@ -3,8 +3,8 @@ import LineChart from "../../../../components/lineChart/LineChart.js"
 import DoughnutChart from "../../../../components/doughnutChart/Doughnut.js"
 import './Overview.scss'
 import { useState, useEffect } from "react"
-
 import data from '../../../../data/dashboard.json' 
+import { Tooltip } from "@material-ui/core"
 
 export default function  OverView() { 
 
@@ -58,8 +58,9 @@ export default function  OverView() {
 
             <div className='title'>
                 Project Statistic 
-           
+           <Tooltip title="Detailed project statistics" arrow="true" placement="right">
             <i className='bi bi-question-circle-fill' style={{color : '#7166F9', paddingLeft : '10px'}}></i>
+            </Tooltip>
             </div>
             <ul className='range-select'>
                 {       
@@ -85,7 +86,7 @@ export default function  OverView() {
                     <div className='info-block'>
                     <div className='info-header' style={{alignItems : 'center'}}>
                        <div className='title'> Total Visits</div>
-                    <div className='price' style={{fontSize : '34px'}}>
+                    <div  style={{fontSize : '34px', color : '#7166F9'}}>
                         42,43M
                     </div>
                     </div> 
@@ -121,7 +122,10 @@ export default function  OverView() {
 
                                    <div> {
                                        infoBox.bounceRate.title
-                                    } </div>   <i className='bi bi-question-circle-fill info-icons' style= {infoBox.bounceRate.selected ?{color : 'white'} :  {}} ></i>
+                                    } </div> 
+                                    <Tooltip title="The percentage of visitors to a particular website who navigate away from the site after viewing only one page." arrow="true">
+                                     <i className='bi bi-question-circle-fill info-icons' style= {infoBox.bounceRate.selected ?{color : 'white'} :  {}} ></i> 
+                                     </Tooltip>
                                 </div>
                                 </div>
                         
@@ -148,7 +152,11 @@ export default function  OverView() {
                                 <h1>{infoBox.pagesPerVisit.value}%</h1>
                                 <div className="info-subtxt">
 
-                                   <div> {infoBox.pagesPerVisit.title} </div>   <i className='bi bi-question-circle-fill info-icons' style= {infoBox.pagesPerVisit.selected ?{color : 'white'} :  {}} ></i>
+                                   <div> {infoBox.pagesPerVisit.title} </div>  
+                                   <Tooltip title="Measures the average number of pages visitors view on a site within a single session" arrow="true">                                    
+                                   <i className='bi bi-question-circle-fill info-icons' style= {infoBox.pagesPerVisit.selected ?{color : 'white'} :  {}} ></i>
+                                   </Tooltip>
+
                                 </div>
                                 </div>
                         
@@ -225,50 +233,13 @@ export default function  OverView() {
             </div>
             <div className='row'>
             <div className='col-md-6'>
-                    <div className='info-block'>
-                    <div className='info-header'>
-                       <div className='title'> Traffic Sources</div>
-                    </div> 
-                    <hr />
-                    <div className='info-content'>
-                        
-                        <table className="custom-table">
-      <thead className="tableHead">
-        <tr>
-          <th>source</th>
-          <th>Traffic Source (%)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Direct</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Search</td>
-          <td>20</td>
-        </tr>
-      </tbody>
-    </table>
-
-                           
-                            
-                      
-                        <DoughnutChart></DoughnutChart>
-                    </div>
-
-                    </div>
+                   <TrafficSourcesInfoBox />
                 </div>
 
                 <div className='col-md-6'>
-                    <div className='info-block'>
-                    <div className='info-header'>
-                       <div className='title'> Traffic Sources</div>
-                    </div> 
-                    <hr />
-                    </div> 
+              
 
-
+                                    <TrafficSourcesInfoBox />
                     </div>
                 </div>
                 
@@ -277,5 +248,47 @@ export default function  OverView() {
 
             
            </div>
+    </div>
+}
+
+
+function TrafficSourcesInfoBox() { 
+    return <div className='info-block'>
+    <div className='info-header'>
+       <div className='title'> Traffic Sources</div>
+    </div> 
+    <hr />
+    <div className='info-content'>
+        
+        <table className="custom-table">
+<thead className="tableHead">
+<tr>
+<th>
+  <div style={{
+    background : "green",
+    height : "1rem",
+    width : "1rem"
+  }}></div>  source</th>
+<th>Traffic Source (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+
+           
+            
+      
+        <DoughnutChart></DoughnutChart>
+    </div>
+
     </div>
 }
