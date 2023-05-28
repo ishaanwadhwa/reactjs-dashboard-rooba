@@ -67,7 +67,6 @@ export default function DoughnutChart(){
                 size : 20,
                 family : 'Arial'
             }
-            console.log(chart.config.options.font)
             labels.forEach(label => {
               ctx.font = `20px Arial`
               ctx.fillStyle = 'black';

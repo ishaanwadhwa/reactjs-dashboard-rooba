@@ -11,7 +11,7 @@ export default function Dashbaord() {
     <NavBar/>
     </div>
 
-    <div class = 'col-md-9'>
+    <div className = 'col-md-9'>
        
     <OverView />
     </div>

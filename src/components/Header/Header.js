@@ -12,7 +12,7 @@ export default function Header() {
                    <div className='btn'>
                    <i className='bi bi-caret-down-fill'></i> 
                    </div>
-                   <i class="fa-solid fa-circle-plus info-icons" style={{cursor:'pointer'}}></i>               
+                   <i className="fa-solid fa-circle-plus info-icons" style={{cursor:'pointer'}}></i>               
 
 
                 </div>

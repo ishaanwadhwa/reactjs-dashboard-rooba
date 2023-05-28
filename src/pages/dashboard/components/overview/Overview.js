@@ -109,7 +109,7 @@ export default function  OverView() {
                                 } :  {} }></i>
                                 <div>
                                 {
-                                    infoBox.bounceRate.changeRate > 0 ? <i class="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i class="bi bi-caret-down-fill" style={{color : 'red'}}></i>
+                                    infoBox.bounceRate.changeRate > 0 ? <i className="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i className="bi bi-caret-down-fill" style={{color : 'red'}}></i>
                                 } {Math.abs(infoBox.bounceRate.changeRate) + '%'} 
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ export default function  OverView() {
                         <div className='col-md-6'>
                         <div className={infoBox.pagesPerVisit.selected ? 'info-block curr' : 'info-block'} onClick={() => setInfoBoxSelected('pagesPerVisit')}>
                             <div className='header' style={{justifyContent : 'space-around'}}>
-                            <i class="fa-solid fa-calendar-days info-icons" style={infoBox.pagesPerVisit.selected ? {
+                            <i className="fa-solid fa-calendar-days info-icons" style={infoBox.pagesPerVisit.selected ? {
                                 color : 'white'
                             } : {}}></i>                                <div>
                                     {}
@@ -171,12 +171,12 @@ export default function  OverView() {
                         <div className='col-md-6'>
                         <div className={infoBox.totalMonthlyVisit.selected ? 'info-block curr' : 'info-block'} onClick={() => setInfoBoxSelected('totalMonthlyVisit')}>
                             <div className='header' style={{justifyContent : 'space-around'}}>
-                            <i class="bi bi-person-fill info-icons" style={infoBox.totalMonthlyVisit.selected ? {
+                            <i className="bi bi-person-fill info-icons" style={infoBox.totalMonthlyVisit.selected ? {
                                 color : 'white'
                             }: {}}></i>
                                 <div>
                                 {
-                                    infoBox.totalMonthlyVisit.changeRate > 0 ? <i class="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i class="bi bi-caret-down-fill" style={{color : 'red'}}></i>
+                                    infoBox.totalMonthlyVisit.changeRate > 0 ? <i className="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i className="bi bi-caret-down-fill" style={{color : 'red'}}></i>
                                 } {Math.abs(infoBox.totalMonthlyVisit.changeRate) + '%'} 
                                 </div>
                             </div>
@@ -202,11 +202,11 @@ export default function  OverView() {
                         <div className='col-md-6'>
                         <div className={infoBox.averageVisit.selected ? 'info-block curr' : 'info-block'} onClick={() => setInfoBoxSelected('averageVisit')}>
                             <div className='header' style={{justifyContent : 'space-around'}}>
-                            <i class="fa-sharp fa-solid fa-hourglass-half info-icons" style={infoBox.averageVisit.selected ? {
+                            <i className="fa-sharp fa-solid fa-hourglass-half info-icons" style={infoBox.averageVisit.selected ? {
                                 color : 'white' 
                             } : {}}></i>                                <div>
   {
-                                    infoBox.averageVisit.changeRate > 0 ? <i class="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i class="bi bi-caret-down-fill" style={{color : 'red'}}></i>
+                                    infoBox.averageVisit.changeRate > 0 ? <i className="bi bi-caret-up-fill" style={{color : 'lightgreen'}}></i> : <i className="bi bi-caret-down-fill" style={{color : 'red'}}></i>
                                 } {Math.abs(infoBox.averageVisit.changeRate) + '%'}                                 </div>
                             </div>
                             <div className='info-content'>
